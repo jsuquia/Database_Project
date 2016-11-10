@@ -23,7 +23,7 @@
             <div class="center">
 
                 <div class="back">
-                    <a href="index.php">&#10092; back</a>
+                    <a href="login.php">&#10092; back</a>
                 </div>
                 <div class="title">
                     <h1><span style="color: black">Specs</span><span style="color: #696969">Express</span></h1>
@@ -39,12 +39,25 @@
                     <input type="text" name="username" placeholder="Username">
                 </div>
 
+                <div class="password">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                
+                <div class="street">
+                    <input type="text" name="street" placeholder="Street">
+                </div>
+                
+                <div class="area">
+                    <input type="text" ID="postcode" name="postcode" required placeholder="Postcode">
+                    <input type="text" ID="city" name="city" required="required" placeholder="City">
+                </div>
+                
                 <div class="email">
                     <input type="email" name="email" placeholder="Email">
                 </div>
-
-                <div class="password">
-                    <input type="password" name="password" placeholder="Password">
+                
+                <div class="phone">
+                    <input type="tel" name="phone" placeholder="Phone Number">
                 </div>
 
                 <div class="submit">
@@ -111,8 +124,6 @@
 	{
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-        $surname = $_POST['surname'];
-		$firstname = $_POST['firstname'];
         $result = mysql_query("SELECT * FROM Patient WHERE username='$username'");
         echo $result;
 		if(mysql_num_rows($result) >0)
@@ -127,7 +138,16 @@
         <?php
         }
         else{
-		$insertUserSQL = "INSERT INTO Patient(First_Name,Last_Name,Username, Password, Contact_ID) VALUES('$firstname','$surname','$username','$password',1)";
+        $surname = $_POST['surname'];
+		$firstname = $_POST['firstname'];
+        $city = $_POST['city'];
+		$street = $_POST['street'];
+        $postcode = $_POST['postcode'];
+		$phone = $_POST['phone'];
+        $email = $_POST['email'];
+        $insertcontact = "INSERT INTO Contact_Details(City,Street,Post_Code, Phone_Number, Email) VALUES('$city','$street','$postcode','$phone','$email')";
+		echo $insertcontact;
+		$insertUserSQL = "INSERT INTO Patient(First_Name,Last_Name,Username, Password, Contact_ID) VALUES('$firstname','$surname','$username','$password',(Select ID from Contact_Details where (City = '$city' AND Street = '$street' AND Post_Code='$postcode' AND Phone_Number ='$phone' and Email = '$email')))";
 		echo $insertUserSQL;
         ?>
 
@@ -137,6 +157,7 @@
             </div>
 
             <?php
+        mysql_query($insertcontact );
 		mysql_query($insertUserSQL );
         }
 	}

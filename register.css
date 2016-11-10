@@ -24,7 +24,7 @@ nav {
 .center {
     margin: auto;
     width: 400px;
-    height: 500px;
+    height: 670px;
     border: 3px solid white;
     border-radius: .25rem;
     padding: 10px;
@@ -47,11 +47,7 @@ a {
     text-decoration: none;
 }
 
-.fullname,
-.username,
-.email,
-.password,
-.submit {
+.fullname, .username, .password, .street, .area, .phone, .email, .submit {
     border-radius: .25rem;
     height: 40px;
     margin-bottom: 15px;
@@ -63,7 +59,8 @@ a {
 
 input[type=text],
 input[type=email],
-input[type=password] {
+input[type=password],
+input[type=tel]{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #696969;
     padding-left: 5%;
@@ -76,13 +73,13 @@ input[type=password] {
     background-color: white;
 }
 
-#firstname {
+#firstname, #postcode {
     width: 42%;
     height: 100%;
     margin-right: 5%;
 }
 
-#surname {
+#surname, #city {
     width: 42%;
     height: 100%;
 }
