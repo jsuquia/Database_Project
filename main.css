@@ -1,0 +1,142 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : Oct 20, 2016, 11:00:30 AM
+    Author     : Javier
+*/
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+    /*overflow: hidden;*/
+}
+
+#fill {
+    position: fixed;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 130px;
+    bottom: 0;
+    text-align: center;
+    background-image: url("main.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header {
+    height: 130px;
+    background-color: white;
+}
+
+h1 {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: black;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-top: -20px;
+    font-size: 16px;
+    color: #696969;
+}
+
+h3 {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.details {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-left: 60px;
+    font-size: 15px;
+}
+
+.margin {
+    margin-left: 50px;
+}
+
+.title {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    float: left;
+    padding-left: 50px;
+}
+
+.logo {
+    margin-top: 8%;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 45px;
+    padding: 0;
+    overflow: hidden;
+    /*border: none;
+    background-color: #eae8e8;*/
+    width: auto;
+    float: right;
+    padding-right: 25px;
+}
+
+li {
+    float: left;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: lightgrey;
+}
+
+li a.current {
+    color: lightgrey;
+}
+
+.layout {
+    width: 300px;
+    display: inline-block;
+}
+
+.grid {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#profile {
+    width: 400px;
+}
+
+.edit {
+    position: relative;
+    margin: auto;
+    margin-top: -240px;
+    width: 50%;
+    width: 200px;
+}
+
+input[type=text], input[type=email], #updatebtn {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    padding-left: 5%;
+}
+
+input {
+    margin-bottom: 50px;
+}

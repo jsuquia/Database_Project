@@ -1,0 +1,100 @@
+.content{
+    /*background-color: red;*/
+    height: 70%;
+    padding-left: 8%;
+}
+
+h4 {
+    font-family: "Century Gothic", sans-serif;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+h5, h6 {
+    font-family: "Century Gothic", sans-serif;
+    text-align: center;
+    font-weight: 100;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+.text{
+    text-align: center;
+    margin-left: -13%;
+    margin-top: 45px;
+}
+
+.examination, .fitting, .dilation, .check{
+    border: 1px solid lightgrey;
+    margin-top: 60px;
+    height: 450px;
+    width: 320px;
+    align-content: center;
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#one {
+    background-image: url(examination.jpg);
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#two {
+    background-image: url(fitting.jpg);
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#three {
+    background-image: url(dilation.jpg);
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 110% 100%;
+}
+
+#four {
+    background-image: url(check.jpg);
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.top{
+    height: 45%;    
+}
+
+.middle{
+    height: 30%;
+}
+
+.bottom{
+    height: 15%;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 110px;
+    cursor: pointer;
+}
