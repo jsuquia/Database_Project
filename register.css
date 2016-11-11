@@ -35,6 +35,13 @@ nav {
     background-color: white;
 }
 
+@media only screen and (max-height: 700px) {
+    .body {
+        overflow:scroll;
+        background-color: aqua;
+    }
+}
+
 .back {
     margin-top: 5px;
     margin-bottom: -20px;

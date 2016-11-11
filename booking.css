@@ -1,7 +1,6 @@
 .content{
     /*background-color: red;*/
     height: 70%;
-    padding-left: 8%;
 }
 
 h4 {
@@ -27,8 +26,15 @@ h6 {
 
 .text{
     text-align: center;
-    margin-left: -13%;
     margin-top: 45px;
+}
+
+.examination{
+    margin-left: 32%;
+}
+
+.fitting{
+    margin-left: 5%;
 }
 
 .examination, .fitting, .dilation, .check{
@@ -38,12 +44,10 @@ h6 {
     width: 320px;
     align-content: center;
     display: inline-block;
-    margin-left: 50px;
-    margin-bottom: 20px;
 }
 
 #one {
-    background-image: url(examination.jpg);
+    background-image: url(fitting.jpg);
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -51,13 +55,13 @@ h6 {
 }
 
 #two {
-    background-image: url(fitting.jpg);
+    background-image: url(examination.jpg);
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+/*
 #three {
     background-image: url(dilation.jpg);
     text-align: center;
@@ -72,7 +76,7 @@ h6 {
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
+}*/
 
 .top{
     height: 45%;    
@@ -98,3 +102,6 @@ h6 {
     margin-left: 110px;
     cursor: pointer;
 }
+
+
+

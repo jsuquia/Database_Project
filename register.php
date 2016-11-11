@@ -115,10 +115,7 @@
         include "db.php";
 
 	
-	if(isset($_SESSION['Loggedin']))
-		echo "logged in";
-	else
-    {
+	
 	//if they have posted a value then obviously its not the first time they just arrived
 	if(isset($_POST['username']) && $_POST['password'])
 	{
@@ -160,7 +157,7 @@
         mysql_query($insertcontact );
 		mysql_query($insertUserSQL );
         }
-	}
+	
     }
 	include "closedb.php";
 	

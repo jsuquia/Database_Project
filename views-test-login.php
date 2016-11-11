@@ -73,16 +73,20 @@
 
 
     <?php 
-        include "db.php";
-         session_start();
-	            $_SESSION["Loggedin"]=false;
+        $DBusername = '16ac3u12';
+		$DBpassword = 'cab123';
+		
+		include "db.php";
             if(isset($_POST['username']) && $_POST['password'])
 	{
-		
-        $username = mysql_real_escape_string ($_POST['username']);
+		$username = mysql_real_escape_string ($_POST['username']);
 		$password= mysql_real_escape_string ($_POST['password']);
 	
-		$result = mysql_query("SELECT * FROM Patient WHERE username='$username'");
+		$result = mysql_query("SELECT Username, Password FROM Employee WHERE username='$username'
+		UNION ALL 
+		SELECT Username, Password FROM Patient WHERE username='$username'");
+		
+		echo $result;
 		
 		if(mysql_num_rows($result) ==1)
 		{

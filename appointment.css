@@ -1,0 +1,68 @@
+.center {
+    margin: auto;
+    margin-top: 40px;
+    width: 550px;
+    height: 200px;
+    border: 1px solid lightgrey;
+    border-radius: .25rem;
+    padding: 10px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+h4 {
+    font-family: "Century Gothic", sans-serif;
+    margin:auto;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h5, h6 {
+    font-family: "Century Gothic", sans-serif;
+    margin:auto;
+    font-weight: 100;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+.inner{
+    height: 30%;
+    padding-top: 25px;
+}
+
+#date {
+    width: 25%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+#time {
+    width: 25%;
+    height: 100%;
+    margin-left: 15%;
+}
+
+input[type=submit] {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: auto;
+    margin-right: 40px;
+    float: right;
+    border: none;
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    cursor: pointer;
+}
+
