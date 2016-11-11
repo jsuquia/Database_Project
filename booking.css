@@ -47,7 +47,7 @@ h6 {
 }
 
 #one {
-    background-image: url(fitting.jpg);
+    background-image: url(img/fitting.jpg);
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@ h6 {
 }
 
 #two {
-    background-image: url(examination.jpg);
+    background-image: url(img/examination.jpg);
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
